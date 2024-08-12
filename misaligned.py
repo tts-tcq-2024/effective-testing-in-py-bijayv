@@ -17,10 +17,11 @@ def print_color_map(n):
         for j, minor in enumerate(minor_colors):
             if(i * 5 + j == n):
                 print(f'{i * 5 + j: <{sep}} | {major: <{sep}} | {minor}')
-                
-    return len(major_colors) * len(minor_colors)
+               
+    return color_code[n]
 
 
 result = print_color_map(5)
+print(result)
 assert(result == 25)
 print("All is well (maybe!)\n")
