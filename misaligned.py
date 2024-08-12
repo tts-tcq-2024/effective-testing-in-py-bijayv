@@ -27,11 +27,11 @@ def all_color():
         for j, minor in enumerate(minor_colors):
             print(f'{i * 5 + j: <{sep}} | {major: <{sep}} | {minor}')
 
+all_color()
 result = print_color_map(5)
 assert(result == ['Red', 'Blue'])
 result = print_color_map(21)
 assert(result == ['Violet', 'Orange'])
 result = print_color_map(30)
 assert(result == "Index out of range")
-map = all_color()
 print("All is well (maybe!)\n")
