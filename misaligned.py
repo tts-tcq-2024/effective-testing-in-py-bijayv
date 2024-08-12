@@ -3,7 +3,8 @@ def print_color_map(n):
     major_colors = ["White", "Red", "Black", "Yellow", "Violet"]
     minor_colors = ["Blue", "Orange", "Green", "Brown", "Slate"]
     color_code = {}
-    global sep = len(major_colors[0])
+    global sep
+    sep = len(major_colors[0])
     for i, major in enumerate(major_colors):
         if(len(major) > sep):
             sep = len(major)
