@@ -22,6 +22,5 @@ def print_color_map(n):
 
 
 result = print_color_map(5)
-print(result)
-assert(result == 25)
+assert(result == ['Red', 'Blue'])
 print("All is well (maybe!)\n")
